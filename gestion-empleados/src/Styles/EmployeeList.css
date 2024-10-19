@@ -1,0 +1,80 @@
+/* Contenedor principal centrado y con borde dorado */
+.employee-list-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  min-height: 100vh;
+  border: 2px solid #e1bf40;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título con color dorado y margen */
+.employee-list-container h1 {
+  color: #e1bf40;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla, con ancho máximo y sombra */
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Evita desbordes */
+}
+
+/* Tabla con ancho completo y colores */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+table thead {
+  background-color: #333333;
+}
+
+/* Celdas con padding y alineación izquierda */
+table th, table td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Encabezados en mayúsculas y negrita */
+table th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Alterna color de filas pares */
+table tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+
+/* Efecto hover en filas */
+table tr:hover {
+  background-color: #444444;
+}
+
+/* Botón de añadir empleado con fondo dorado */
+.add-employee-btn {
+  background-color: #e1bf40;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover en el botón de añadir empleado */
+.add-employee-btn:hover {
+  background-color: #d4ab3b;
+}

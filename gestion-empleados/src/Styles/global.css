@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Contenedor principal de la app (sidebar + contenido) */
+.app-container {
+  display: flex; /* Sidebar y contenido a un lado */
+  background-color: #1e1e1e;
+}
+
+/* Sidebar fijo */
+.sidebar {
+  width: 250px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  border-right: 2px solid #e1bf40; /* Borde dorado */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Contenedor de contenido principal */
+.content-container {
+  margin-left: 250px; /* Desplazado para acomodar el sidebar */
+  padding: 20px;
+  width: calc(100% - 250px); /* Resto del ancho */
+  min-height: 100vh;
+  overflow: auto; /* Desplazamiento si es necesario */
+}
+
+/* Estilos para contenedores generales */
+.container {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #e1bf40; /* Borde dorado */
+}
+
+/* Tablas generales */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Inputs globales */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #e1bf40;
+  box-shadow: 0px 0px 5px rgba(225, 191, 64, 0.5);
+}
+
+/* Botones globales */
+button {
+  background-color: #e1bf40;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #d4ab3b;
+}
+
+button:active {
+  background-color: #b68d30;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Modales */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid #e1bf40; /* Borde dorado */
+}
+
+/* Efectos generales de sombra */
+.shadow-lg {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.shadow-md {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-sm {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Clases de espaciado */
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.pt-20 { padding-top: 20px; }
+.pb-20 { padding-bottom: 20px; }
+
+/* Flexbox utilitario */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-center { justify-content: center; align-items: center; }
+.flex-space-between { justify-content: space-between; }
+
+/* Ocultar elementos */
+.hidden { display: none; }
+
+/* Hover con resalte */
+.hover-highlight {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-highlight:hover {
+  background-color: #333333;
+  color: #e1bf40; /* Cambio de color al hover */
+}
